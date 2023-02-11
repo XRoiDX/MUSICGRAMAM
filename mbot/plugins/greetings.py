@@ -36,16 +36,16 @@ async def start(client, message):
     reply_markup = [
         [
             InlineKeyboardButton(
-                text="Bot Channel", url="https://t.me/TheCrowClub"
+                text="Bot Channel 🫂", url="https://t.me/huit_botz"
             ),
             InlineKeyboardButton(
-                text="Repo", url="https://github.com/rozari0/NeedMusicRobot"
+                text="Co Associated Channel 🫂", url="https://t.me/musicgramam"
             ),
             InlineKeyboardButton(text="Help", callback_data="helphome"),
         ],
         [
             InlineKeyboardButton(
-                text="Donate", url="https://www.buymeacoffee.com/rozario"
+                text="💓", url="https://t.me/musicgramam"
             ),
         ],
     ]
@@ -71,7 +71,7 @@ async def start(client, message):
             reply_markup=InlineKeyboardMarkup(reply_markup),
         )
     return await message.reply_text(
-        f"Hello {message.from_user.first_name}, I'm a Simple Music Downloader Bot. I Currently Support Download from Youtube.",
+        f"Hello {message.from_user.first_name}, I'm a Simple Music Downloader Bot. I Currently Support Download from Youtube & Spotify.",
         reply_markup=InlineKeyboardMarkup(reply_markup),
     )
 
